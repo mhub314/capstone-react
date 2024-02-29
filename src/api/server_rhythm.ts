@@ -2,7 +2,7 @@ const token = '98fb16a93f17d6a4a58a26aa95ce7d8efa6a9cfc79b47ead'
 
 export const server_calls_rhythm = {
     get: async () => { 
-        const response = await fetch(`https://capstone-songlog.onrender.com/api/rhythm_blues`,
+        const response = await fetch(`https://capstone-flask-ymtl.onrender.com/api/rhythm_blues`,
         {
             method: 'GET',
             headers: {
@@ -20,7 +20,7 @@ export const server_calls_rhythm = {
         return await response.json()
     },
     create: async (data: any = {}) => {
-        const response = await fetch(`https://capstone-songlog.onrender.com/api/rhythm_blues`,
+        const response = await fetch(`https://capstone-flask-ymtl.onrender.com/api/rhythm_blues`,
         {
             method: 'POST',
             headers: {
@@ -40,7 +40,7 @@ export const server_calls_rhythm = {
     },
 
     update: async (id: string, data:any = {}) => {
-        const response = await fetch(`https://capstone-songlog.onrender.com/api/rhythm_blues/${id}`,
+        const response = await fetch(`https://capstone-flask-ymtl.onrender.com/api/rhythm_blues/${id}`,
         {
             method: 'PUT',
             headers: {
@@ -60,7 +60,7 @@ export const server_calls_rhythm = {
     },
 
     delete: async (id: string) => {
-        const response = await fetch(`https://capstone-songlog.onrender.com/api/rhythm_blues/${id}`,
+        const response = await fetch(`https://capstone-flask-ymtl.onrender.com/api/rhythm_blues/${id}`,
         {
             method: 'DELETE',
             headers: {

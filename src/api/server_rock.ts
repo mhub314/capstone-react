@@ -2,7 +2,7 @@ const token = '98fb16a93f17d6a4a58a26aa95ce7d8efa6a9cfc79b47ead'
 
 export const server_calls_rock = {
     get: async () => { 
-        const response = await fetch(`https://capstone-songlog.onrender.com/api/rock`,
+        const response = await fetch(`https://capstone-flask-ymtl.onrender.com/api/rock`,
         {
             method: 'GET',
             headers: {
@@ -20,7 +20,7 @@ export const server_calls_rock = {
         return await response.json()
     },
     create: async (data: any = {}) => {
-        const response = await fetch(`https://capstone-songlog.onrender.com/api/rock`,
+        const response = await fetch(`https://capstone-flask-ymtl.onrender.com/api/rock`,
         {
             method: 'POST',
             headers: {
@@ -40,7 +40,7 @@ export const server_calls_rock = {
     },
 
     update: async (id: string, data:any = {}) => {
-        const response = await fetch(`https://capstone-songlog.onrender.com/api/rock/${id}`,
+        const response = await fetch(`https://capstone-flask-ymtl.onrender.com/api/rock/${id}`,
         {
             method: 'PUT',
             headers: {
@@ -60,7 +60,7 @@ export const server_calls_rock = {
     },
 
     delete: async (id: string) => {
-        const response = await fetch(`https://capstone-songlog.onrender.com/api/rock/${id}`,
+        const response = await fetch(`https://capstone-flask-ymtl.onrender.com/api/rock/${id}`,
         {
             method: 'DELETE',
             headers: {
