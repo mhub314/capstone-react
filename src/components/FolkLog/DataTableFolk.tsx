@@ -47,14 +47,14 @@ function DataTableFolk() {
         <div className="bg-amber-500 flex flex-row">
             <div>
                 <button
-                    className="text-amber-900 border-solid border-2 border-amber-800 p-3 bg-amber-600 rounded m-3 hover:bg-amber-300 hover:text-white"
+                    className="text-amber-900 border-solid border-2 border-amber-700 p-3 bg-orange-300 rounded m-3 hover:bg-amber-300 hover:text-white"
                     onClick={() => handleOpen()}
                 >
                     New Folk Entry
                 </button>
             </div> 
-            <Button onClick={handleOpen} className="text-amber-900 border-solid border-2 border-amber-800 p-3 bg-amber-600 rounded m-3 hover:bg-amber-300 hover:text-white" >Update</Button>
-            <Button onClick={deleteData} className="text-amber-900 border-solid border-2 border-amber-800 p-3 bg-amber-600 rounded m-3 hover:bg-amber-300 hover:text-white" >Delete</Button>
+            <Button onClick={handleOpen} className="text-amber-900 border-solid border-2 border-amber-700 p-3 bg-orange-300 rounded m-3 hover:bg-amber-300 hover:text-white" >Update</Button>
+            <Button onClick={deleteData} className="text-amber-900 border-solid border-2 border-amber-700 p-3 bg-orange-300 rounded m-3 hover:bg-amber-300 hover:text-white" >Delete</Button>
         </div>
         <div className={ open ? "hidden" : "container mx-10 my-5 flex flex-col"}
             style={{ height: 400, width: '100%'}}

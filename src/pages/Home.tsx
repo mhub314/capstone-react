@@ -1,4 +1,4 @@
-import Background from '../assets/images/img6.jpg'
+import Background from '../assets/images/img9.jpg'
 // import imageToAdd from '../assets/image/img2.jpg'
 
 function Home() {

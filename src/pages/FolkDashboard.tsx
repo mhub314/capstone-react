@@ -2,7 +2,7 @@ import DataTableFolk from "../components/FolkLog/DataTableFolk"
 
 function FolkDashboard() {
   return (
-    <div className="bg-amber-100"><DataTableFolk /></div>
+    <div className="bg-orange-300 m-10"><DataTableFolk /></div>
   )
 }
 

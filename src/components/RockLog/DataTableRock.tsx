@@ -44,7 +44,7 @@ function DataTableRock() {
             open={open}
             onClose={handleClose}
         />
-        <div className="bg-rose-500 flex flex-row">
+        <div className="bg-rose-400 flex flex-row">
             <div>
                 <button
                     className="border-solid border-2 border-rose-700 p-3 bg-rose-300 rounded m-3 hover:bg-rose-400 hover:text-white"
@@ -59,7 +59,7 @@ function DataTableRock() {
         <div className={ open ? "hidden" : "container mx-10 my-5 flex flex-col"}
             style={{ height: 400, width: '100%'}}
         >
-            <h2 className="p-3 bg-rose-600 font-semibold my-2 rounded">My Rock Entries</h2>
+            <h2 className="p-3 bg-rose-500 font-semibold my-2 rounded">My Rock Entries</h2>
             <DataGrid rows={contactData} columns={columns} rowsPerPageOptions={[5]}
             checkboxSelection={true} 
             onSelectionModelChange={ (item:any) => {
