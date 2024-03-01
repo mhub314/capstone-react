@@ -44,7 +44,7 @@ function DataTableRhythm() {
             open={open}
             onClose={handleClose}
         />
-        <div className="bg-blue-500 flex flex-row">
+        <div className="bg-blue-200 flex flex-row">
             <div>
                 <button
                     className="text-blue-800 border-solid border-2 border-blue-700 p-3 bg-blue-300 rounded m-3 hover:bg-blue-800 hover:text-white"
@@ -59,7 +59,7 @@ function DataTableRhythm() {
         <div className={ open ? "hidden" : "container mx-10 my-5 flex flex-col"}
             style={{ height: 400, width: '100%'}}
         >
-            <h2 className="p-3 bg-blue-600 my-2 font-semibold rounded">My R&B Entries</h2>
+            <h2 className="p-3 bg-blue-100 my-2 font-semibold rounded">My R&B Entries</h2>
             <DataGrid rows={contactData} columns={columns} rowsPerPageOptions={[5]}
             checkboxSelection={true} 
             onSelectionModelChange={ (item:any) => {
