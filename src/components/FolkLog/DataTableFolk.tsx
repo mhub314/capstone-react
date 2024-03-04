@@ -59,8 +59,8 @@ function DataTableFolk() {
         <div className={ open ? "hidden" : "container mx-10 my-5 flex flex-col"}
             style={{ height: 400, width: '100%'}}
         >
-            <h2 className="p-3 bg-amber-500 font-semibold my-2 rounded">My Folk Entries</h2>
-            <DataGrid rows={contactData} columns={columns} rowsPerPageOptions={[5]}
+            <h2 className="p-3 bg-amber-500 font-semibold my-2 rounded mr-20">My Folk Entries</h2>
+            <DataGrid className="mr-20" rows={contactData} columns={columns} rowsPerPageOptions={[5]}
             checkboxSelection={true} 
             onSelectionModelChange={ (item:any) => {
                 setSelectionModel(item)
