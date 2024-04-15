@@ -1,4 +1,4 @@
-import Background from  "src/assets/images/concert.jpg"
+import Background from  "../assets/images/concert.jpg"
 
 function Home() {
   return (
