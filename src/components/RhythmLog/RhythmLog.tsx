@@ -67,13 +67,13 @@ const RhythmLog = ( props:RhythmLogProps) => {
           <Input {...register('latest_user_update')} name='latest_user_update' placeholder="Latest User Update" />
         </div>
         <div className="flex p-1">
-          <Button className="flex m-10 mr-1 bg-blue-800 p-2 rounded hover:bg-blue-950 text-white"
+          <Button className="flex justify-start m-10 mr-1 bg-neutral-900 p-2 rounded hover:bg-neutral-100 hover:text-black text-white"
           >
             Submit
           </Button>
         </div>
       </form>
-        <p className="text-center text-gray-500 text-xs">
+        <p className="text-center text-neutral-500 text-xs">
         &copy;2024 CD SP Corp. All rights reserved.
         </p>
     </div>

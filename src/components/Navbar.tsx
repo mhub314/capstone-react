@@ -30,12 +30,12 @@ function Navbar() {
 
 
     return (
-        <nav className='drop-shadow-xl font-light  flex items-center justify-between flex-wrap bg-orange-200 p-5'>
-            <div className='flex items-center flex-shrink-0 text-rose-700 mr-6'>
-                <Link to='/' className='hover:text-orange-300 ml-5 font-bold text-xl tracking-tight'>Your Song Log</Link>
+        <nav className='drop-shadow-2xl shadow-2xl font-light flex items-center justify-between flex-wrap bg-neutral-900 p-5'>
+            <div className='flex items-center flex-shrink-0 text-neutral-100 mr-6'>
+                <Link to='/' className='hover:text-neutral-500 font-serif ml-5 font-bold text-xl tracking-tight'>Your Song Log</Link>
             </div>
             <div className='block'>
-                <button onClick={dropDown} className='flex items-center px-4 py-4 text-orange-600 rounded border-orange-600 border-solid border-2 hover:text-orange-300 hover:border-orange-300'>
+                <button onClick={dropDown} className='flex items-center px-4 py-4 text-neutral-100 rounded border-neutral-100 border-solid border-2 hover:text-neutral-500 hover:border-neutral-500'>
                     <i className='fa-solid fa-caret-down'></i>
                 </button>
             </div>
@@ -45,64 +45,64 @@ function Navbar() {
                 {
                             !auth.currentUser ?
 
-                            <Button className='border-solid border-2 border-orange-400 p-3 m-5 bg-orange-300 hover:bg-orange-300 rounded justify-center'>
+                            <Button className='border-solid border-2 border-neutral-100 p-3 m-5 bg-neutral-900 hover:bg-neutral-300 rounded justify-center'>
                                 <div>
-                                    <Link to="/" onClick={ () => { signInOnClick() }} className="flex place-items-center mt-4 
-                                    lg:inline-block lg:mt-0 text-rose-800 hover:text-white font-bold">
+                                    <Link to="/" onClick={ () => { signInOnClick() }} className=" font-serif flex place-items-center mt-4 
+                                    lg:inline-block lg:mt-0 text-neutral-100 hover:text-neutral-900 font-bold">
                                         Sign In
                                     </Link>
                                 </div>
                             </Button>
                             :
-                            <Button className='border-solid border-2 border-orange-400 p-3 m-5 bg-orange-300 hover:bg-orange-300 rounded justify-center'>
+                            <Button className='border-solid border-2 border-neutral-100 p-3 m-5 bg-neutral-900 hover:bg-neutral-300 rounded justify-center'>
                                 <div>
-                                    <Link to="/" onClick={ () => { signOutOnClick() }} className="flex place-items-center mt-4 
-                                    lg:inline-block lg:mt-0 text-rose-800 hover:text-white font-bold">
+                                    <Link to="/" onClick={ () => { signOutOnClick() }} className=" font-serif flex place-items-center mt-4 
+                                    lg:inline-block lg:mt-0 text-neutral-100 hover:text-neutral-900 font-bold">
                                         Sign Out
                                     </Link>
                                 </div>
                             </Button>
                         }
-                    <Button className='border-solid border-2 border-orange-400 p-1 m-5 rounded bg-orange-300 justify-center'>
+                    <Button className='border-solid border-2 border-neutral-100 p-3 m-5 bg-neutral-900 hover:bg-neutral-300 rounded justify-center'>
                         <div>
-                            <Link to='/' onClick={ clicked} className='flex place-itmes-center mt-4 lg:inline-block lg:mt-0
-                             text-rose-800 font-bold hover:text-white mr-3'>
+                            <Link to='/' onClick={ clicked} className=" font-serif flex place-items-center mt-4 
+                                    lg:inline-block lg:mt-0 text-neutral-100 hover:text-neutral-900 font-bold">
                                 Home
                             </Link>
                         </div>
 
                     </Button>
-                    {/* <Button className='border-solid border-2 border-orange-400 p-1 m-5 rounded bg-orange-300 justify-center'>
+                    {/* <Button className='border-solid border-2 border-neutral-100 p-3 m-5 bg-neutral-900 hover:bg-neutral-300 rounded justify-center'>
                         <div>
-                            <Link to='/about' onClick={ clicked} className='flex place-itmes-center mt-4 lg:inline-block lg:mt-0
-                             text-rose-800 font-bold hover:text-white mr-3'>
+                            <Link to='/about' onClick={ clicked} className="flex place-items-center mt-4 
+                                    lg:inline-block lg:mt-0 text-neutral-100 hover:text-neutral-900 font-bold">
                                 About
                             </Link>
                         </div>
 
                     </Button> */}
-                    <Button className='border-solid border-2 border-orange-400 p-1 m-5 rounded bg-orange-300 justify-center'>
+                    <Button className='border-solid border-2 border-neutral-100 p-3 m-5 bg-neutral-900 hover:bg-neutral-300 rounded justify-center'>
                         <div>
-                            <Link to='/folkdashboard' onClick={ clicked} className='flex place-itmes-center mt-4 lg:inline-block lg:mt-0
-                             text-rose-800 font-bold hover:text-white mr-3'>
+                            <Link to='/folkdashboard' onClick={ clicked} className=" font-serif flex place-items-center mt-4 
+                                    lg:inline-block lg:mt-0 text-neutral-100 hover:text-neutral-900 font-bold">
                                 Folk Log
                             </Link>
                         </div>
 
                     </Button>
-                    <Button className='border-solid border-2 border-orange-400 p-1 m-5 rounded bg-orange-300 justify-center'>
+                    <Button className='border-solid border-2 border-neutral-100 p-3 m-5 bg-neutral-900 hover:bg-neutral-300 rounded justify-center'>
                         <div>
-                            <Link to='/rockdashboard' onClick={ clicked} className='flex place-itmes-center mt-4 lg:inline-block lg:mt-0
-                             text-rose-800 font-bold hover:text-white mr-3'>
+                            <Link to='/rockdashboard' onClick={ clicked} className=" font-serif flex place-items-center mt-4 
+                                    lg:inline-block lg:mt-0 text-neutral-100 hover:text-neutral-900 font-bold">
                                 Rock Log
                             </Link>
                         </div>
 
                     </Button>
-                    <Button className='border-solid border-2 border-orange-400 p-1 m-5 rounded bg-orange-300 justify-center'>
+                    <Button className='border-solid border-2 border-neutral-100 p-3 m-5 bg-neutral-900 hover:bg-neutral-300 rounded justify-center'>
                         <div>
-                            <Link to='/rhythmdashboard' onClick={ clicked} className='flex place-itmes-center mt-4 lg:inline-block lg:mt-0
-                             text-rose-800 font-bold hover:text-white mr-3'>
+                            <Link to='/rhythmdashboard' onClick={ clicked} className=" font-serif flex place-items-center mt-4 
+                                    lg:inline-block lg:mt-0 text-neutral-100 hover:text-neutral-900 font-bold">
                                 Rhythm & Blues Log
                             </Link>
                         </div>

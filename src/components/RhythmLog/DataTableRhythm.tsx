@@ -44,23 +44,23 @@ function DataTableRhythm() {
             open={open}
             onClose={handleClose}
         />
-        <div className="bg-blue-200 flex flex-row">
+        <div className="bg-neutral-200 shadow-2xl flex flex-row">
             <div>
                 <button
-                    className="text-blue-800 border-solid border-2 border-blue-700 p-3 bg-blue-300 rounded m-3 hover:bg-blue-800 hover:text-white"
+                    className="font-serif shadow-2xl border-solid border-2 text-white border-neutral-900 p-3 bg-neutral-900 rounded m-3 hover:bg-neutral-200 hover:text-black"
                     onClick={() => handleOpen()}
                 >
                     New R&B Entry
                 </button>
             </div> 
-            <Button onClick={handleOpen} className="text-blue-800 border-solid border-2 border-blue-700 p-3 bg-blue-300 rounded m-3 hover:bg-blue-800 hover:text-white" >Update</Button>
-            <Button onClick={deleteData} className="text-blue-800 border-solid border-2 border-blue-700 p-3 bg-blue-300 rounded m-3 hover:bg-blue-800 hover:text-white" >Delete</Button>
+            <Button onClick={handleOpen} className="font-serif shadow-2xl border-solid border-2 text-white border-neutral-900 p-3 bg-neutral-900 rounded m-3 hover:bg-neutral-200 hover:text-black" >Update</Button>
+            <Button onClick={deleteData} className="font-serif shadow-2xl border-solid border-2 text-white border-neutral-900 p-3 bg-neutral-900 rounded m-3 hover:bg-neutral-200 hover:text-black" >Delete</Button>
         </div>
         <div className={ open ? "hidden" : "container mx-10 my-5 flex flex-col"}
             style={{ height: 400, width: '100%'}}
         >
-            <h2 className="p-3 bg-blue-100 my-2 font-semibold rounded mr-20">My R&B Entries</h2>
-            <DataGrid className="mr-20" rows={contactData} columns={columns} rowsPerPageOptions={[5]}
+            <h2 className="font-serif p-3 bg-neutral-900 shadow-2xl text-white font-semibold my-2 rounded mr-20 ml-20">My R&B Entries</h2>
+            <DataGrid className="mr-20 ml-20 mb-3 shadow-2xl" rows={contactData} columns={columns} rowsPerPageOptions={[5]}
             checkboxSelection={true} 
             onSelectionModelChange={ (item:any) => {
                 setSelectionModel(item)

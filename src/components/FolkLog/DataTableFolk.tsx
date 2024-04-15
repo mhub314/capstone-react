@@ -44,23 +44,23 @@ function DataTableFolk() {
             open={open}
             onClose={handleClose}
         />
-        <div className="bg-amber-500 flex flex-row">
+        <div className="bg-neutral-200 shadow-2xl flex flex-row">
             <div>
                 <button
-                    className="text-amber-900 border-solid border-2 border-amber-700 p-3 bg-orange-300 rounded m-3 hover:bg-amber-300 hover:text-white"
+                    className="font-serif shadow-2xl border-solid border-2 text-white border-neutral-900 p-3 bg-neutral-900 rounded m-3 hover:bg-neutral-200 hover:text-black"
                     onClick={() => handleOpen()}
                 >
                     New Folk Entry
                 </button>
             </div> 
-            <Button onClick={handleOpen} className="text-amber-900 border-solid border-2 border-amber-700 p-3 bg-orange-300 rounded m-3 hover:bg-amber-300 hover:text-white" >Update</Button>
-            <Button onClick={deleteData} className="text-amber-900 border-solid border-2 border-amber-700 p-3 bg-orange-300 rounded m-3 hover:bg-amber-300 hover:text-white" >Delete</Button>
+            <Button onClick={handleOpen} className="font-serif shadow-2xl border-solid border-2 text-white border-neutral-900 p-3 bg-neutral-900 rounded m-3 hover:bg-neutral-200 hover:text-black" >Update</Button>
+            <Button onClick={deleteData} className="font-serif shadow-2xl border-solid border-2 text-white border-neutral-900 p-3 bg-neutral-900 rounded m-3 hover:bg-neutral-200 hover:text-black" >Delete</Button>
         </div>
         <div className={ open ? "hidden" : "container mx-10 my-5 flex flex-col"}
             style={{ height: 400, width: '100%'}}
         >
-            <h2 className="p-3 bg-amber-500 font-semibold my-2 rounded mr-20">My Folk Entries</h2>
-            <DataGrid className="mr-20" rows={contactData} columns={columns} rowsPerPageOptions={[5]}
+            <h2 className="font-serif p-3 shadow-2xl bg-neutral-900 text-white font-semibold my-2 rounded mr-20 ml-20">My Folk Entries</h2>
+            <DataGrid className="mr-20 ml-20 mb-3 shadow-2xl" rows={contactData} columns={columns} rowsPerPageOptions={[5]}
             checkboxSelection={true} 
             onSelectionModelChange={ (item:any) => {
                 setSelectionModel(item)
